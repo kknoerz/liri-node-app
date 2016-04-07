@@ -1,7 +1,17 @@
-var spotify = require(random.txt)
+var spotify = require(random.txt);
 
-if (process.argv[2]===process.argv[3]) {
-  console.log("They are the same");
-}else {
-  console.log("They are not the same");
+if (process.argv[2]==="my-tweets"){
+
+}
+
+if (process.argv[2]==="spotify-this-song"){
+
+}
+
+if (process.argv[2]==="movie-this"){
+
+}
+
+if (process.argv[2]==="do-what-it-says"){
+
 }
