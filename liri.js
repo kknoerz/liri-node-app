@@ -1,4 +1,4 @@
-var spotify = require(random.txt);
+var fs = require(fs);
 
 if (process.argv[2]==="my-tweets"){
 
@@ -15,3 +15,4 @@ if (process.argv[2]==="movie-this"){
 if (process.argv[2]==="do-what-it-says"){
 
 }
+console.log(spotify)
