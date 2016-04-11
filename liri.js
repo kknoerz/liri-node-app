@@ -35,19 +35,23 @@ if (process.argv[2]==="spotify-this-song"){
   var spotify = require('spotify');
 
   spotify.search({ type: 'track', query: process.argv[3] }, function(error, data) {
-    if (data.tracks.items.length == 0){
-      var path = "https://api.spotify.com/v1/artists/6FBDaR13swtiWwGhX1WQsP"
-      spotify.search(path, function(error, data) {
-        debugger;
-        console.log(data)
-
-      });
-    }
     if (error) {
         console.log('Error occurred: ' + error);
         return;
     }
     debugger;
+    if (data.tracks.items.length == 0){
+      var path = "https://api.spotify.com/v1/tracks/7GhIk7Il098yCjg4BQjzvb"
+      spotify.get(path, function(error, data) {
+        var rick = require('./rickRoll.js')
+        console.log(' ')
+        console.log('Artist name: ', data.artists[0].name)
+        console.log('Track name: ', data.name)
+        console.log("Rick Roll'd try again!");
+        console.log(rick)
+
+      });
+    }
     // console.log(data.tracks)
     for (j=0;j<data.tracks.items.length;j++){
     var num = j+1;
@@ -67,7 +71,7 @@ if (process.argv[2]==="spotify-this-song"){
 }
 
 if (process.argv[2]==="movie-this"){
-  
+
 
 }
 
