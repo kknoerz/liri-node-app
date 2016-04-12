@@ -112,5 +112,14 @@ if (process.argv[2]==="movie-this"){
 };
 
 if (process.argv[2]==="do-what-it-says"){
-  
-}
+  debugger;
+  var fs = require('fs');
+  var readIt = './random.txt';
+  var random = fs.readFileSync(readIt, 'utf8');
+  console.log(typeof(random));
+  var spotify = random.slice(0,17)
+  var song = random.slice(18,38)
+  console.log(random)
+  console.log(spotify)
+  console.log(song)
+};
