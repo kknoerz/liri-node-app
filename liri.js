@@ -13,7 +13,7 @@ var runTwitter = function(){
   });
 
   var path  = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
-  var params = 'KnoerzerKevin';
+  var params = 'knoerzerkevin';
 
   client.get(path, params, function(error, tweets, response){
     if (error){
@@ -94,8 +94,8 @@ var runMovieThis = function(){
         console.log('Language: ', jsonBody.Language);
         console.log('Plot: ', jsonBody.Plot);
         console.log('Actors: ', jsonBody.Actors);
-        console.log('Tomatoe Rating: ', jsonBody.tomatoMeter);
-        console.log('Tomatoe URL: ', jsonBody.tomatoURL);
+        console.log('Tomato Rating: ', jsonBody.tomatoMeter);
+        console.log('Tomato URL: ', jsonBody.tomatoURL);
         console.log('**************************************************************************************************************');
         console.log(' ');
       });
@@ -108,8 +108,8 @@ var runMovieThis = function(){
       console.log('Language: ', jsonBody.Language);
       console.log('Plot: ', jsonBody.Plot);
       console.log('Actors: ', jsonBody.Actors);
-      console.log('Tomatoe Rating: ', jsonBody.tomatoMeter);
-      console.log('Tomatoe URL: ', jsonBody.tomatoURL);
+      console.log('Tomato Rating: ', jsonBody.tomatoMeter);
+      console.log('Tomato URL: ', jsonBody.tomatoURL);
       console.log('**************************************************************************************************************');
       console.log(' ');
     }
